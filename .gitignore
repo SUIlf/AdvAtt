@@ -1,0 +1,8 @@
+data/cifar10/cifar-10-python.tar.gz
+data/cifar10/cifar-10-batches-py/batches.meta
+data/cifar10/cifar-10-batches-py/data_batch_1
+data/cifar10/cifar-10-batches-py/data_batch_2
+data/cifar10/cifar-10-batches-py/data_batch_3
+data/cifar10/cifar-10-batches-py/data_batch_4
+data/cifar10/cifar-10-batches-py/data_batch_5
+data/cifar10/cifar-10-batches-py/test_batch

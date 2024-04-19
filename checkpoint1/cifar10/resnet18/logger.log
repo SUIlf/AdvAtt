@@ -1,0 +1,126 @@
+Accuracy of the model under FGSM attack: 41.66%
+Total time taken for FGSM attack: 4.56 seconds
+ 
+Accuracy of the model under PGD attack: 10.91%
+Total time taken for PGD attack: 80.67 seconds
+ 
+Accuracy of the model under L2 attack: 63.36%
+Total time taken for L2 attack: 81.76 seconds
+ 
+Accuracy of the model under LINF attack: 72.39%
+Total time taken for LINF attack: 81.67 seconds
+ 
+Accuracy of the model under L2 attack: 5.62%
+Total time taken for L2 attack: 80.50 seconds
+ 
+Accuracy of the model under PGD attack: 19.30%
+Total time taken for PGD attack: 22.35 seconds
+ 
+Accuracy of the model under L2 attack: 0.56%
+Total time taken for L2 attack: 22.44 seconds
+ 
+Accuracy of the model under L2 attack: 1.74%
+Total time taken for L2 attack: 22.13 seconds
+ 
+Accuracy of the model under L2 attack: 1.77%
+Total time taken for L2 attack: 22.45 seconds
+ 
+Accuracy of the model under LINF attack: 19.30%
+Total time taken for LINF attack: 22.06 seconds
+ 
+Accuracy of the model under LINF attack: 36.12%
+Total time taken for LINF attack: 22.37 seconds
+ 
+Accuracy of the model under LINF attack: 12.29%
+Total time taken for LINF attack: 21.99 seconds
+ 
+Accuracy of the model under FGSM attack: 41.66%
+Total time taken for FGSM attack: 4.45 seconds
+ 
+Accuracy of the model under FGSM attack: 41.21%
+Total time taken for FGSM attack: 4.29 seconds
+ 
+Accuracy of the model under PGD attack: 12.29%
+Total time taken for PGD attack: 21.93 seconds
+ 
+Accuracy of the model under L2 attack: 1.77%
+Total time taken for L2 attack: 21.90 seconds
+ 
+Accuracy of the model under LINF attack: 12.29%
+Total time taken for LINF attack: 22.02 seconds
+ 
+Accuracy of the model under FGSM attack: 41.21%
+Total time taken for FGSM attack: 4.55 seconds
+ 
+Accuracy of the model under NUCLEAR attack: 95.06%
+Total time taken for NUCLEAR attack: 112.29 seconds
+ 
+Accuracy of the model under PGD attack: 12.29%
+Total time taken for PGD attack: 21.73 seconds
+ 
+Accuracy of the model under FGSM attack: 8.82%
+Total time taken for FGSM attack: 4.46 seconds
+ 
+Accuracy of the model under FGSM attack: 8.82%
+Total time taken for FGSM attack: 4.33 seconds
+ 
+Accuracy of the model under NUCLEAR attack: 93.16%
+Total time taken for NUCLEAR attack: 109.68 seconds
+ 
+Accuracy of the model under PGD attack: 0.00%
+Total time taken for PGD attack: 21.78 seconds
+ 
+Accuracy of the model under FGSM attack: 8.82%
+Total time taken for FGSM attack: 4.15 seconds
+ 
+Accuracy of the model under NUCLEAR attack: 93.16%
+Total time taken for NUCLEAR attack: 439.16 seconds
+ 
+Accuracy of the model under PGD attack: 0.00%
+Total time taken for PGD attack: 80.71 seconds
+ 
+Accuracy of the model under FGSM attack: 8.82%
+Total time taken for FGSM attack: 4.17 seconds
+ 
+Accuracy of the model under FGSM attack: 57.51%
+Total time taken for FGSM attack: 4.39 seconds
+ 
+Accuracy of the model under FGSM attack: 57.51%
+Total time taken for FGSM attack: 4.29 seconds
+ 
+Accuracy of the model under FGSM attack: 57.51%
+Total time taken for FGSM attack: 4.56 seconds
+ 
+Accuracy of the model under L2 attack: 0.00%
+Total time taken for L2 attack: 80.88 seconds
+ 
+Accuracy of the model under NUCLEAR attack: 95.06%
+Total time taken for NUCLEAR attack: 256.56 seconds
+ 
+Accuracy of the model under LINF attack: 36.05%
+Total time taken for LINF attack: 82.00 seconds
+ 
+Accuracy of the model under NUCLEAR attack: 94.46%
+Total time taken for NUCLEAR attack: 415.16 seconds
+ 
+Accuracy of the model under NUCLEAR attack: 94.72%
+Total time taken for NUCLEAR attack: 438.07 seconds
+ 
+Accuracy of the model under LINF attack: 72.43%
+Total time taken for LINF attack: 80.77 seconds
+ 
+Accuracy of the model under LINF attack: 80.64%
+Total time taken for LINF attack: 22.32 seconds
+ 
+Accuracy of the model under FGSM attack: 34.69%
+Total time taken for FGSM attack: 4.55 seconds
+ 
+Accuracy of the model under LINF attack: 80.64%
+Total time taken for LINF attack: 21.72 seconds
+ 
+Accuracy of the model under FGSM attack: 41.21%
+Total time taken for FGSM attack: 4.37 seconds
+ 
+Accuracy of the model under LINF attack: 76.86%
+Total time taken for LINF attack: 41.23 seconds
+ 
