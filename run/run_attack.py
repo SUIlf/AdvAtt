@@ -10,7 +10,7 @@ from util.data_parser import parse_data
 from util.model_utils import model_load
 from util.utility import find_gpu, Logger, progress_bar
 
-from util.attacks import fgsm_attack, pgd_attack, L2_norm_attack, Linf_norm_attack, nuclear_norm_attack
+from util.attacks import fgsm_attack, pgd_attack, FW_nuclear_attack, FW_spectral_attack
 
 # 使用argparse处理命令行参数
 parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
@@ -64,12 +64,16 @@ def test(model, device, test_loader, attack_type, epsilon):
             perturbed_images = fgsm_attack(model, images, labels, epsilon)
         elif attack_type == 'pgd':
             perturbed_images = pgd_attack(model, images, labels, eps=epsilon_pgd, alpha=alpha_pgd, iters=iters_pgd)
-        elif attack_type == 'l2':
-            perturbed_images = L2_norm_attack(model, images, labels, eps=epsilon, alpha=alpha_pgd, iters=iters_pgd, device=device)
-        elif attack_type == 'linf':
-            perturbed_images = Linf_norm_attack(model, images, labels, eps=epsilon_pgd, alpha=alpha_pgd, iters=iters_pgd, device=device)
+        # elif attack_type == 'l2':
+        #     perturbed_images = L2_norm_attack(model, images, labels, eps=epsilon, alpha=alpha_pgd, iters=iters_pgd, device=device)
+        # elif attack_type == 'linf':
+        #     perturbed_images = Linf_norm_attack(model, images, labels, eps=epsilon_pgd, alpha=alpha_pgd, iters=iters_pgd, device=device)
+        # elif attack_type == 'nuclear':
+        #     perturbed_images = nuclear_norm_attack(model, images, labels, eps=epsilon_pgd, alpha=alpha_pgd, iters=iters_pgd, device=device)
         elif attack_type == 'nuclear':
-            perturbed_images = nuclear_norm_attack(model, images, labels, eps=epsilon_pgd, alpha=alpha_pgd, iters=iters_pgd, device=device)
+            perturbed_images = FW_nuclear_attack(model, images, labels, radius=0.1, eps=1e-10, step_size=1.0, T_max=40, device=device)
+        elif attack_type == 'spectral':
+            perturbed_images = FW_spectral_attack(model, images, labels, radius=0.1, eps=1e-10, step_size=1.0, T_max=40, device=device)
 
         outputs = model(perturbed_images)
         _, predicted = torch.max(outputs.data, 1)
@@ -87,8 +91,8 @@ def test(model, device, test_loader, attack_type, epsilon):
 
 
 # 运行测试
-print('fgsm')
-test(model, device, testloader, 'fgsm', epsilon_pgd)
+# print('fgsm')
+# test(model, device, testloader, 'fgsm', epsilon_pgd)
 
 # print('l2')
 # test(model, device, testloader, 'l2', epsilon_pgd)
@@ -96,10 +100,13 @@ test(model, device, testloader, 'fgsm', epsilon_pgd)
 # print('nuclear')
 # test(model, device, testloader, 'nuclear', epsilon_pgd)
 
+print('spectral')
+test(model, device, testloader, 'nuclear', epsilon_pgd)
+
 # print('pgd')
 # test(model, device, testloader, 'pgd', epsilon_pgd)
 
-print('linf')
-test(model, device, testloader, 'linf', epsilon_pgd)
+# print('linf')
+# test(model, device, testloader, 'linf', epsilon_pgd)
 
 

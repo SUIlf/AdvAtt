@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from util.data_parser import parse_data
 from util.model_utils import model_load
 from util.utility import find_gpu, Logger
-from util.attacks import fgsm_attack, pgd_attack, L2_norm_attack, Linf_norm_attack, nuclear_norm_attack
+from util.attacks import fgsm_attack, pgd_attack, FW_nuclear_attack, FW_spectral_attack
 
 def imshow(img_T, ax, title=None):
     """显示单个图像的函数，进行反标准化并调整维度以适配 matplotlib 显示"""
@@ -37,9 +37,9 @@ _, _, testloader, _ = parse_data(name=dataset, batch_size=batch_size, valid_rati
 
 model = model_load(dataset=dataset, model_type=model_type, model_path='./checkpoint', normalize=None).to(device).eval()
 
-epsilons = [0, 0.05, 0.5]
+epsilons = [0, 0.05, 0.1, 0.5, 1, 5, 10]
 # attack_types = ['fgsm', 'pgd', 'l2', 'linf', 'nuclear']
-attack_types = ['fgsm', 'linf']
+attack_types = ['nuclear', 'spectral']
 alpha_pgd = 1
 iters_pgd = 10
 
@@ -57,12 +57,16 @@ for attack_type in attack_types:
                 perturbed_images = fgsm_attack(model, images, labels, epsilon)
             elif attack_type == 'pgd':
                 perturbed_images = pgd_attack(model, images, labels, eps=epsilon, alpha=alpha_pgd, iters=iters_pgd)
-            elif attack_type == 'l2':
-                perturbed_images = L2_norm_attack(model, images, labels, eps=epsilon, alpha=alpha_pgd, iters=iters_pgd, device=device)
-            elif attack_type == 'linf':
-                perturbed_images = Linf_norm_attack(model, images, labels, eps=epsilon, alpha=alpha_pgd, iters=iters_pgd, device=device)
+            # elif attack_type == 'l2':
+            #     perturbed_images = L2_norm_attack(model, images, labels, eps=epsilon, alpha=alpha_pgd, iters=iters_pgd, device=device)
+            # elif attack_type == 'linf':
+            #     perturbed_images = Linf_norm_attack(model, images, labels, eps=epsilon, alpha=alpha_pgd, iters=iters_pgd, device=device)
+            # elif attack_type == 'nuclear':
+            #     perturbed_images = nuclear_norm_attack(model, images, labels, eps=epsilon, alpha=alpha_pgd, iters=iters_pgd, device=device)
             elif attack_type == 'nuclear':
-                perturbed_images = nuclear_norm_attack(model, images, labels, eps=epsilon, alpha=alpha_pgd, iters=iters_pgd, device=device)
+                perturbed_images = FW_nuclear_attack(model, images, labels, radius=epsilon, eps=1e-10, step_size=1.0, T_max=40, device=device)
+            elif attack_type == 'spectral':
+                perturbed_images = FW_spectral_attack(model, images, labels, radius=epsilon, eps=1e-10, step_size=1.0, T_max=40, device=device)
             
             perturbed_data_np = perturbed_images.detach().cpu()
 
