@@ -71,7 +71,7 @@ def test(model, device, test_loader, attack_type, epsilon):
         # elif attack_type == 'nuclear':
         #     perturbed_images = nuclear_norm_attack(model, images, labels, eps=epsilon_pgd, alpha=alpha_pgd, iters=iters_pgd, device=device)
         elif attack_type == 'nuclear':
-            perturbed_images = FW_nuclear_attack(model, images, labels, radius=0.1, eps=1e-10, step_size=1.0, T_max=40, device=device)
+            perturbed_images = FW_nuclear_attack(model, images, labels, radius=3, eps=1e-10, step_size=1.0, T_max=40, device=device)
         elif attack_type == 'spectral':
             perturbed_images = FW_spectral_attack(model, images, labels, radius=0.1, eps=1e-10, step_size=1.0, T_max=40, device=device)
 

@@ -99,7 +99,7 @@ if sys.stdout.isatty():
     except ValueError:
         term_width = 80
 else:
-    term_width = 80  # 非交互式终端，使用默认值
+    term_width = 60  # 非交互式终端，使用默认值
 term_width = int(term_width)
 
 TOTAL_BAR_LENGTH = 65.
