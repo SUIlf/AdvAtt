@@ -28,7 +28,7 @@ print(f"Using {device}.")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # 初始化日志和保存目录
-save_folder = f'./checkpoint1/{args.dataset}/{args.model_type}/'
+save_folder = f'./checkpoint/{args.dataset}/{args.model_type}/'
 os.makedirs(save_folder, exist_ok=True)
 log_path = os.path.join(save_folder, 'logger.log')
 logger = Logger(log_path=log_path)

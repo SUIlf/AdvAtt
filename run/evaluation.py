@@ -22,12 +22,6 @@ dataset = 'cifar10'
 batch_size = 128
 model_type = 'resnet18'
 
-# 初始化日志和保存目录
-save_folder = f'./checkpoint1/{dataset}/{model_type}/'
-os.makedirs(save_folder, exist_ok=True)
-log_path = os.path.join(save_folder, 'logger.log')
-logger = Logger(log_path=log_path)
-
 criterion = nn.CrossEntropyLoss()
 
 # 假设你的数据加载函数可以这样调用（确保使用与训练时相同的参数）
@@ -37,4 +31,4 @@ trained_model = model_load(dataset=dataset, model_type=model_type, model_path='.
 trained_model = trained_model.to(device)
 trained_model.eval()  # 设置为评估模式
 
-test_model(trained_model, testloader, device, criterion, logger)
+test_model(trained_model, testloader, device, criterion)

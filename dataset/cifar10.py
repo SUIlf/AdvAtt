@@ -81,7 +81,7 @@ def cifar10(batch_size, valid_ratio = None, shuffle = True, augmentation = True,
 
         train_loader = torch.utils.data.DataLoader(trainset, batch_size = batch_size, sampler = train_sampler, num_workers = 0, pin_memory = True)
         valid_loader = torch.utils.data.DataLoader(validset, batch_size = batch_size, sampler = valid_sampler, num_workers = 0, pin_memory = True)
-        test_loader = torch.utils.data.DataLoader(testset, batch_size = batch_size, shuffle = False, num_workers = 0, pin_memory = True)
+        test_loader = torch.utils.data.DataLoader(testset, batch_size = batch_size, shuffle = True, num_workers = 0, pin_memory = True)
 
     else:
         if shuffle == True:
@@ -91,6 +91,6 @@ def cifar10(batch_size, valid_ratio = None, shuffle = True, augmentation = True,
 
         train_loader = torch.utils.data.DataLoader(trainset, batch_size = batch_size, sampler = train_sampler, num_workers = 0, pin_memory = True)
         valid_loader = None
-        test_loader = torch.utils.data.DataLoader(testset, batch_size = batch_size, shuffle = False, num_workers = 0, pin_memory = True)
+        test_loader = torch.utils.data.DataLoader(testset, batch_size = batch_size, shuffle = True, num_workers = 0, pin_memory = True)
 
     return train_loader, valid_loader, test_loader, classes

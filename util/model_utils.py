@@ -41,7 +41,7 @@ def run_epoch(model, dataloader, device, criterion, optimizer=None, is_training=
 def train_model(model, criterion, optimizer, trainloader, valloader, save_folder, epochs=10, device='cuda', logger=None):
     best_acc = 0
     history = {'train_loss': [], 'train_acc': [], 'val_loss': [], 'val_acc': []}
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs)
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs*10000)
 
     for epoch in range(epochs):
         print('\nEpoch: %d - LR: %.5f' % (epoch, scheduler.get_last_lr()[0]))

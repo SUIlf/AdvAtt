@@ -27,7 +27,7 @@ parser.add_argument('--valid_ratio', type = float, default = None, help = 'The p
 parser.add_argument('--model_type', type = str, default = 'resnet18', help = 'The type of the model, default is "resnet18".')
 # normalize，用于指定标准化模式
 parser.add_argument('--normalize', type = str, default = None, help = 'The nomralization mode, default is None.')
-parser.add_argument('--lr', default=0.1, type=float, help='learning rate')
+parser.add_argument('--lr', default=0.01, type=float, help='learning rate')
 # parser.add_argument('--resume', '-r', action='store_true', help='resume from checkpoint')
 args = parser.parse_args()
 
@@ -39,7 +39,7 @@ print(f"Using {device}.")
 best_acc = 0  # best test accuracy
 start_epoch = 0  # start from epoch 0 or last checkpoint epoch
 
-epochs = 160
+epochs = 80
 batch_size = 128
 valid_ratio = None
 
