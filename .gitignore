@@ -16,4 +16,4 @@ data/cifar100/cifar-100-python/meta
 data/cifar100/cifar-100-python/test
 
 checkpoint/cifar100/resnet50/best_model.pth
-checkpoint/cifar10/resnet18/best_model.pth
+
