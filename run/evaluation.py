@@ -20,7 +20,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 dataset = 'cifar10'
 batch_size = 128
-model_type = 'resnet18'
+model_type = 'resnet50'
 
 criterion = nn.CrossEntropyLoss()
 

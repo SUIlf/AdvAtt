@@ -17,14 +17,16 @@ from util.model_utils import train_model, test_model
 # 使用argparse处理命令行参数
 parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
 # dataset，默认值为'cifar10'
-parser.add_argument('--dataset', type = str, default = 'cifar10', help = 'The dataset used, default = "cifar10".')
+parser.add_argument('--dataset', type = str, default = 'cifar100', help = 'The dataset used, default = "cifar10".')
+# model_type，用于指定模型类型
+parser.add_argument('--model_type', type = str, default = 'resnet18', help = 'The type of the model, default is "resnet18".')
+# epoch_num，用于指定训练的轮数
+parser.add_argument('--epochs', type = int, default = 200, help = 'The number of epochs, default is 200.')
+
 # batch_size，用于指定批量大小
 parser.add_argument('--batch_size', type = int, default = 128, help = 'The batch size, default is 128.')
 # valid_ratio，用于指定验证集的比例
 parser.add_argument('--valid_ratio', type = float, default = None, help = 'The proportion of the validation set, default is None.')
-
-# model_type，用于指定模型类型
-parser.add_argument('--model_type', type = str, default = 'resnet18', help = 'The type of the model, default is "resnet18".')
 # normalize，用于指定标准化模式
 parser.add_argument('--normalize', type = str, default = None, help = 'The nomralization mode, default is None.')
 parser.add_argument('--lr', default=0.01, type=float, help='learning rate')
@@ -39,7 +41,7 @@ print(f"Using {device}.")
 best_acc = 0  # best test accuracy
 start_epoch = 0  # start from epoch 0 or last checkpoint epoch
 
-epochs = 80
+epochs = 100
 batch_size = 128
 valid_ratio = None
 

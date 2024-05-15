@@ -65,29 +65,6 @@ def nuclear_norm(D: torch.Tensor, radius: float, device='cpu') -> torch.Tensor:
     
     return v_FW
 
-def FW_nuclear_attack(model, images, labels, radius=1, eps=1e-10, step_size=0.1, iters=20, device='cpu'):
-    criterion = torch.nn.CrossEntropyLoss()
-    perturbation = torch.zeros_like(images).to(device)
-    perturbation.requires_grad = True
-    
-    for iteration in range(iters):
-        perturbation.requires_grad_()
-        with torch.enable_grad():
-            outputs = model(torch.clamp(images + perturbation, 0, 1))
-            loss = -criterion(outputs, labels)
-        grad = torch.autograd.grad(loss, [perturbation], retain_graph=True)[0]
-        # Compute optimal perturbation
-        v_FW = norms(-grad, radius, norm_type = 'nuclear', device=device)
-        step_size = step_size * 1. / (iteration + 3)
-        perturbation = perturbation + step_size * (v_FW - perturbation)
-        adv_images = images.detach() + perturbation.detach()
-        # Early stopping if the gradient updates become very small
-        if torch.norm(grad) < eps:
-            break
-    adv_images = images.detach() + perturbation.detach()
-    adv_images = torch.clamp(adv_images, 0, 1)
-    return adv_images
-
 # ---------------------------------spectral_norm--------------------------------------------
 def norms(D: torch.Tensor, radius: float, norm_type='nuclear', device='cpu') -> torch.Tensor:
     assert isinstance(D, torch.Tensor), "Input must be a PyTorch tensor."
@@ -115,6 +92,30 @@ def norms(D: torch.Tensor, radius: float, norm_type='nuclear', device='cpu') -> 
     if D.size(0) == 1 and D.ndim == 3:
         v_FW = v_FW.squeeze(0)
     return v_FW
+
+def FW_nuclear_attack(model, images, labels, radius=1, eps=1e-10, step_size=0.1, iters=20, device='cpu'):
+    criterion = torch.nn.CrossEntropyLoss()
+    perturbation = torch.zeros_like(images).to(device)
+    perturbation.requires_grad = True
+    for iteration in range(iters):
+        perturbation.requires_grad_()
+        with torch.enable_grad():
+            outputs = model(torch.clamp(images + perturbation, 0, 1))
+            loss = -criterion(outputs, labels)
+        grad = torch.autograd.grad(loss, [perturbation], retain_graph=True)[0]
+        # Compute optimal perturbation
+        v_FW = norms(-grad, radius, norm_type = 'nuclear', device=device)
+        step_size = step_size * 1. / (iteration + 3)
+        perturbation = perturbation + step_size * (v_FW - perturbation)
+        adv_images = images.detach() + perturbation.detach()
+        # Early stopping if the gradient updates become very small
+        if torch.norm(grad) < eps:
+            break
+    adv_images = images.detach() + perturbation.detach()
+    adv_images = torch.clamp(adv_images, 0, 1)
+    return adv_images
+
+
 
 def FW_spectral_attack(model, images, labels, radius=1, eps=1e-10, step_size=1.0, iters=40, device='cpu'):
     criterion = torch.nn.CrossEntropyLoss()
