@@ -17,9 +17,9 @@ from util.model_utils import train_model, test_model
 # 使用argparse处理命令行参数
 parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
 # dataset，默认值为'cifar10'
-parser.add_argument('--dataset', type = str, default = 'cifar100', help = 'The dataset used, default = "cifar10".')
+parser.add_argument('--dataset', type = str, default = 'cifar10', help = 'The dataset used, default = "cifar10".')
 # model_type，用于指定模型类型
-parser.add_argument('--model_type', type = str, default = 'resnet18', help = 'The type of the model, default is "resnet18".')
+parser.add_argument('--model_type', type = str, default = 'resnet50', help = 'The type of the model, default is "resnet18".')
 # epoch_num，用于指定训练的轮数
 parser.add_argument('--epochs', type = int, default = 200, help = 'The number of epochs, default is 200.')
 
@@ -42,11 +42,11 @@ best_acc = 0  # best test accuracy
 start_epoch = 0  # start from epoch 0 or last checkpoint epoch
 
 epochs = 100
-batch_size = 128
+batch_size = 1
 valid_ratio = None
 
 # 初始化日志和保存目录
-save_folder = f'./checkpoint/{args.dataset}/{args.model_type}/'
+save_folder = f'./checkpoint2/{args.dataset}/{args.model_type}/'
 os.makedirs(save_folder, exist_ok=True)
 log_path = os.path.join(save_folder, 'logger.log')
 logger = Logger(log_path=log_path)

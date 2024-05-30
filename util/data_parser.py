@@ -4,6 +4,7 @@ import numpy as np
 
 from dataset.cifar10 import cifar10
 from dataset.cifar100 import cifar100
+from dataset.imagenet100 import imagenet100
 # from dataset.svhn import svhn, svhn_plus
 # from dataset.cifar100 import cifar100
 # from dataset.imagenet100 import imagenet100
@@ -22,9 +23,9 @@ def parse_data(name, batch_size, valid_ratio = None, shuffle = True, augmentatio
     # elif name.lower() in ['svhn',]:
     #     # SVHN数据集
     #     train_loader, valid_loader, test_loader, classes = svhn(batch_size = batch_size, valid_ratio = valid_ratio, shuffle = shuffle, augmentation = augmentation, **kwargs)
-    # elif name.lower() in ['imagenet100', 'imagenet']:
-    #     # ImageNet数据集
-    #     train_loader, valid_loader, test_loader, classes = imagenet100(batch_size = batch_size, valid_ratio = valid_ratio, shuffle = shuffle, augmentation = augmentation, **kwargs)
+    elif name.lower() in ['imagenet100', 'imagenet']:
+        # ImageNet数据集
+        trainloader, validloader, testloader, classes = imagenet100(batch_size = batch_size, valid_ratio = valid_ratio)
     else:
         raise ValueError('Unrecognized name of the dataset: %s' % name)
 

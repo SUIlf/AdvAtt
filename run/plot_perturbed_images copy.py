@@ -23,9 +23,9 @@ def imshow(img_T, ax, title=None):
 
 
 # 初始化
-dataset = 'cifar10'
+dataset = 'imagenet100'
 batch_size = 5
-model_type = 'resnet18'
+model_type = 'resnet50'
 device = torch.device(f"cuda:{find_gpu()}" if torch.cuda.is_available() and find_gpu() is not None else "cpu")
 print(f"Using {device}.")
 

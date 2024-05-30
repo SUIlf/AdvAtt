@@ -76,7 +76,7 @@ def norms(D: torch.Tensor, radius: float, norm_type='nuclear', device='cpu') -> 
     elif norm_type == 'spectral':
         k = max(1, int(D.size(2) * 0.5))  # 假设 k 是通道数的 50%
     # 创建一个尺寸为 (k, k) 的对角矩阵，对角线元素为 radius
-    diag_matrix = torch.diag(torch.full((k,), radius, dtype=torch.float)).to(device)
+    diag_matrix = torch.diag(torch.full((k,), radius/k, dtype=torch.float)).to(device)
     # 创建一个与 D 形状相同的张量来存储结果，初始化为 0 并移至相应设备
     v_FW = torch.zeros_like(D).to(device)
     # 对每个批次和每个通道应用 SVD

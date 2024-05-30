@@ -17,7 +17,7 @@ class IndexedImageNet100(datasets.ImageFolder):
     def __getitem__(self, index):
         image, target = super(IndexedImageNet100, self).__getitem__(index)
 
-        return image, target, index
+        return image, target
 
 
 def imagenet100(batch_size, valid_ratio = None, shuffle = True, augmentation = True, train_subset = None):

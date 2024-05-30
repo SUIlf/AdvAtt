@@ -421,3 +421,5 @@ Epoch: 100/100 - LR: 0.01000
 Train Loss: 0.064, Train Acc: 97.776%
 Validation Loss: 0.504, Validation Acc: 86.860%
 Test Accuracy: 92.110%
+
+Epoch: 1/100 - LR: 0.01000
