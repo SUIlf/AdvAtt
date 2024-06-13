@@ -18,9 +18,9 @@ device = torch.device(f"cuda:{find_gpu()}" if torch.cuda.is_available() and find
 print(f"Using {device}.")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-dataset = 'imagenet100'
+dataset = 'cifar100'
 batch_size = 128
-model_type = 'resnet50'
+model_type = 'resnet18'
 
 criterion = nn.CrossEntropyLoss()
 

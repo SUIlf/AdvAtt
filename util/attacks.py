@@ -52,18 +52,18 @@ def pgd_attack(model, images, labels, eps, alpha, iters=40):
 #         v_FW = v_FW.squeeze(0)
 #     return v_FW
 
-def nuclear_norm(D: torch.Tensor, radius: float, device='cpu') -> torch.Tensor:
-    assert isinstance(D, torch.Tensor), "Input must be a PyTorch tensor."
-    # 假设 'D' 已经是一个至少三维的张量，形状可能是 (C, H, W) 或 (B, C, H, W)
-    if D.ndim == 3:
-        D = D.unsqueeze(0)  # 转换为 (1, C, H, W)
-    # 假设 device 和 radius 已经定义
-    ori_shape = D.size()
-    U, s, V = torch.linalg.svd(D.view(ori_shape[0], ori_shape[1]*ori_shape[2], -1), full_matrices=False)
-    prj_pt = radius * torch.einsum('bi,bj->bij', U[:,:,0], V[:,0,:])
-    v_FW = prj_pt.view(ori_shape)
+# def nuclear_norm(D: torch.Tensor, radius: float, device='cpu') -> torch.Tensor:
+#     assert isinstance(D, torch.Tensor), "Input must be a PyTorch tensor."
+#     # 假设 'D' 已经是一个至少三维的张量，形状可能是 (C, H, W) 或 (B, C, H, W)
+#     if D.ndim == 3:
+#         D = D.unsqueeze(0)  # 转换为 (1, C, H, W)
+#     # 假设 device 和 radius 已经定义
+#     ori_shape = D.size()
+#     U, s, V = torch.linalg.svd(D.view(ori_shape[0], ori_shape[1]*ori_shape[2], -1), full_matrices=False)
+#     prj_pt = radius * torch.einsum('bi,bj->bij', U[:,:,0], V[:,0,:])
+#     v_FW = prj_pt.view(ori_shape)
     
-    return v_FW
+#     return v_FW
 
 # ---------------------------------spectral_norm--------------------------------------------
 def norms(D: torch.Tensor, radius: float, norm_type='nuclear', device='cpu') -> torch.Tensor:
@@ -75,7 +75,7 @@ def norms(D: torch.Tensor, radius: float, norm_type='nuclear', device='cpu') -> 
         k = 1
     elif norm_type == 'spectral':
         k = max(1, int(D.size(2) * 0.5))  # 假设 k 是通道数的 50%
-    # 创建一个尺寸为 (k, k) 的对角矩阵，对角线元素为 radius
+    # 创建一个尺寸为 (k, k) 的对角矩阵，对角线元素为 radius/k
     diag_matrix = torch.diag(torch.full((k,), radius/k, dtype=torch.float)).to(device)
     # 创建一个与 D 形状相同的张量来存储结果，初始化为 0 并移至相应设备
     v_FW = torch.zeros_like(D).to(device)

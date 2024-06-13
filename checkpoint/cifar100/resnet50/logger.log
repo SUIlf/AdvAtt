@@ -1,428 +1,436 @@
 
 Epoch: 1/100 - LR: 0.01000
-Train Loss: 4.127, Train Acc: 7.456%
-Validation Loss: 3.647, Validation Acc: 12.900%
+Train Loss: 4.207, Train Acc: 7.142%
+Validation Loss: 3.603, Validation Acc: 14.560%
 Saving improved model..
 
 Epoch: 2/100 - LR: 0.01000
-Train Loss: 3.444, Train Acc: 16.670%
-Validation Loss: 3.229, Validation Acc: 21.520%
+Train Loss: 3.476, Train Acc: 16.208%
+Validation Loss: 3.248, Validation Acc: 20.710%
 Saving improved model..
 
-Epoch: 3/100 - LR: 0.01000
-Train Loss: 2.992, Train Acc: 24.806%
-Validation Loss: 2.917, Validation Acc: 27.430%
+Epoch: 3/100 - LR: 0.00999
+Train Loss: 3.114, Train Acc: 22.550%
+Validation Loss: 2.998, Validation Acc: 27.650%
 Saving improved model..
 
-Epoch: 4/100 - LR: 0.01000
-Train Loss: 2.593, Train Acc: 32.638%
-Validation Loss: 3.409, Validation Acc: 21.940%
+Epoch: 4/100 - LR: 0.00998
+Train Loss: 2.773, Train Acc: 29.176%
+Validation Loss: 3.032, Validation Acc: 27.460%
 
-Epoch: 5/100 - LR: 0.01000
-Train Loss: 2.270, Train Acc: 39.180%
-Validation Loss: 2.596, Validation Acc: 34.620%
+Epoch: 5/100 - LR: 0.00996
+Train Loss: 2.531, Train Acc: 34.148%
+Validation Loss: 3.057, Validation Acc: 28.040%
 Saving improved model..
 
-Epoch: 6/100 - LR: 0.01000
-Train Loss: 2.001, Train Acc: 45.440%
-Validation Loss: 3.053, Validation Acc: 30.770%
+Epoch: 6/100 - LR: 0.00994
+Train Loss: 2.339, Train Acc: 38.194%
+Validation Loss: 3.518, Validation Acc: 21.180%
 
-Epoch: 7/100 - LR: 0.01000
-Train Loss: 1.803, Train Acc: 49.642%
-Validation Loss: 1.980, Validation Acc: 46.810%
+Epoch: 7/100 - LR: 0.00991
+Train Loss: 2.185, Train Acc: 41.476%
+Validation Loss: 2.413, Validation Acc: 38.810%
 Saving improved model..
 
-Epoch: 8/100 - LR: 0.01000
-Train Loss: 1.639, Train Acc: 53.904%
-Validation Loss: 1.891, Validation Acc: 49.440%
+Epoch: 8/100 - LR: 0.00988
+Train Loss: 2.034, Train Acc: 44.772%
+Validation Loss: 2.518, Validation Acc: 39.140%
 Saving improved model..
 
-Epoch: 9/100 - LR: 0.01000
-Train Loss: 1.516, Train Acc: 56.630%
-Validation Loss: 1.976, Validation Acc: 49.830%
+Epoch: 9/100 - LR: 0.00984
+Train Loss: 1.929, Train Acc: 47.262%
+Validation Loss: 2.634, Validation Acc: 35.560%
+
+Epoch: 10/100 - LR: 0.00980
+Train Loss: 1.893, Train Acc: 47.960%
+Validation Loss: 2.402, Validation Acc: 41.080%
 Saving improved model..
 
-Epoch: 10/100 - LR: 0.01000
-Train Loss: 1.391, Train Acc: 60.000%
-Validation Loss: 1.705, Validation Acc: 54.330%
+Epoch: 11/100 - LR: 0.00976
+Train Loss: 1.840, Train Acc: 49.264%
+Validation Loss: 2.269, Validation Acc: 42.890%
 Saving improved model..
 
-Epoch: 11/100 - LR: 0.01000
-Train Loss: 1.291, Train Acc: 62.442%
-Validation Loss: 1.537, Validation Acc: 57.750%
+Epoch: 12/100 - LR: 0.00970
+Train Loss: 1.657, Train Acc: 53.718%
+Validation Loss: 2.012, Validation Acc: 48.570%
 Saving improved model..
 
-Epoch: 12/100 - LR: 0.01000
-Train Loss: 1.202, Train Acc: 64.680%
-Validation Loss: 1.643, Validation Acc: 56.550%
-
-Epoch: 13/100 - LR: 0.01000
-Train Loss: 1.114, Train Acc: 66.886%
-Validation Loss: 1.640, Validation Acc: 56.920%
-
-Epoch: 14/100 - LR: 0.01000
-Train Loss: 1.048, Train Acc: 68.854%
-Validation Loss: 1.485, Validation Acc: 59.780%
+Epoch: 13/100 - LR: 0.00965
+Train Loss: 1.596, Train Acc: 55.114%
+Validation Loss: 1.977, Validation Acc: 49.030%
 Saving improved model..
 
-Epoch: 15/100 - LR: 0.01000
-Train Loss: 0.981, Train Acc: 70.506%
-Validation Loss: 1.504, Validation Acc: 60.420%
+Epoch: 14/100 - LR: 0.00959
+Train Loss: 1.498, Train Acc: 57.264%
+Validation Loss: 1.844, Validation Acc: 51.470%
 Saving improved model..
 
-Epoch: 16/100 - LR: 0.01000
-Train Loss: 0.924, Train Acc: 72.096%
-Validation Loss: 1.510, Validation Acc: 60.290%
+Epoch: 15/100 - LR: 0.00952
+Train Loss: 1.401, Train Acc: 59.658%
+Validation Loss: 2.289, Validation Acc: 45.640%
 
-Epoch: 17/100 - LR: 0.01000
-Train Loss: 0.865, Train Acc: 73.768%
-Validation Loss: 1.392, Validation Acc: 63.450%
+Epoch: 16/100 - LR: 0.00946
+Train Loss: 1.339, Train Acc: 61.400%
+Validation Loss: 1.947, Validation Acc: 50.420%
+
+Epoch: 17/100 - LR: 0.00938
+Train Loss: 1.327, Train Acc: 61.502%
+Validation Loss: 1.910, Validation Acc: 50.250%
+
+Epoch: 18/100 - LR: 0.00930
+Train Loss: 1.236, Train Acc: 63.784%
+Validation Loss: 1.803, Validation Acc: 53.200%
 Saving improved model..
 
-Epoch: 18/100 - LR: 0.01000
-Train Loss: 0.814, Train Acc: 75.044%
-Validation Loss: 1.464, Validation Acc: 61.800%
+Epoch: 19/100 - LR: 0.00922
+Train Loss: 1.187, Train Acc: 65.216%
+Validation Loss: 2.069, Validation Acc: 48.260%
 
-Epoch: 19/100 - LR: 0.01000
-Train Loss: 0.769, Train Acc: 76.308%
-Validation Loss: 1.308, Validation Acc: 64.880%
+Epoch: 20/100 - LR: 0.00914
+Train Loss: 1.139, Train Acc: 66.350%
+Validation Loss: 2.092, Validation Acc: 50.600%
+
+Epoch: 21/100 - LR: 0.00905
+Train Loss: 1.042, Train Acc: 68.780%
+Validation Loss: 1.893, Validation Acc: 55.670%
 Saving improved model..
 
-Epoch: 20/100 - LR: 0.01000
-Train Loss: 0.723, Train Acc: 77.610%
-Validation Loss: 1.510, Validation Acc: 62.030%
+Epoch: 22/100 - LR: 0.00895
+Train Loss: 0.977, Train Acc: 70.562%
+Validation Loss: 1.998, Validation Acc: 53.250%
 
-Epoch: 21/100 - LR: 0.01000
-Train Loss: 0.685, Train Acc: 78.814%
-Validation Loss: 1.377, Validation Acc: 62.880%
+Epoch: 23/100 - LR: 0.00885
+Train Loss: 0.952, Train Acc: 71.086%
+Validation Loss: 1.948, Validation Acc: 54.960%
 
-Epoch: 22/100 - LR: 0.01000
-Train Loss: 0.641, Train Acc: 79.580%
-Validation Loss: 1.401, Validation Acc: 64.410%
-
-Epoch: 23/100 - LR: 0.01000
-Train Loss: 0.604, Train Acc: 81.044%
-Validation Loss: 1.402, Validation Acc: 64.390%
-
-Epoch: 24/100 - LR: 0.01000
-Train Loss: 0.574, Train Acc: 81.834%
-Validation Loss: 1.408, Validation Acc: 64.870%
-
-Epoch: 25/100 - LR: 0.01000
-Train Loss: 0.544, Train Acc: 82.706%
-Validation Loss: 1.369, Validation Acc: 65.440%
+Epoch: 24/100 - LR: 0.00875
+Train Loss: 0.883, Train Acc: 72.962%
+Validation Loss: 1.787, Validation Acc: 56.150%
 Saving improved model..
 
-Epoch: 26/100 - LR: 0.01000
-Train Loss: 0.516, Train Acc: 83.518%
-Validation Loss: 1.377, Validation Acc: 66.290%
+Epoch: 25/100 - LR: 0.00864
+Train Loss: 0.820, Train Acc: 74.866%
+Validation Loss: 1.847, Validation Acc: 55.130%
+
+Epoch: 26/100 - LR: 0.00854
+Train Loss: 0.773, Train Acc: 76.152%
+Validation Loss: 1.825, Validation Acc: 57.600%
 Saving improved model..
 
-Epoch: 27/100 - LR: 0.01000
-Train Loss: 0.488, Train Acc: 84.370%
-Validation Loss: 1.425, Validation Acc: 65.420%
-
-Epoch: 28/100 - LR: 0.01000
-Train Loss: 0.461, Train Acc: 85.194%
-Validation Loss: 1.344, Validation Acc: 66.180%
-
-Epoch: 29/100 - LR: 0.01000
-Train Loss: 0.436, Train Acc: 85.986%
-Validation Loss: 1.372, Validation Acc: 66.690%
+Epoch: 27/100 - LR: 0.00842
+Train Loss: 0.733, Train Acc: 77.102%
+Validation Loss: 1.632, Validation Acc: 60.000%
 Saving improved model..
 
-Epoch: 30/100 - LR: 0.01000
-Train Loss: 0.409, Train Acc: 86.864%
-Validation Loss: 1.412, Validation Acc: 65.530%
+Epoch: 28/100 - LR: 0.00831
+Train Loss: 0.676, Train Acc: 78.966%
+Validation Loss: 2.132, Validation Acc: 51.840%
 
-Epoch: 31/100 - LR: 0.01000
-Train Loss: 0.392, Train Acc: 87.336%
-Validation Loss: 1.318, Validation Acc: 67.730%
+Epoch: 29/100 - LR: 0.00819
+Train Loss: 0.625, Train Acc: 80.300%
+Validation Loss: 1.885, Validation Acc: 55.350%
+
+Epoch: 30/100 - LR: 0.00806
+Train Loss: 0.579, Train Acc: 81.718%
+Validation Loss: 1.946, Validation Acc: 55.360%
+
+Epoch: 31/100 - LR: 0.00794
+Train Loss: 0.547, Train Acc: 82.550%
+Validation Loss: 1.796, Validation Acc: 59.090%
+
+Epoch: 32/100 - LR: 0.00781
+Train Loss: 0.506, Train Acc: 83.774%
+Validation Loss: 1.836, Validation Acc: 58.550%
+
+Epoch: 33/100 - LR: 0.00768
+Train Loss: 0.455, Train Acc: 85.424%
+Validation Loss: 2.210, Validation Acc: 52.940%
+
+Epoch: 34/100 - LR: 0.00755
+Train Loss: 0.455, Train Acc: 85.502%
+Validation Loss: 1.938, Validation Acc: 57.100%
+
+Epoch: 35/100 - LR: 0.00741
+Train Loss: 0.389, Train Acc: 87.542%
+Validation Loss: 1.923, Validation Acc: 57.630%
+
+Epoch: 36/100 - LR: 0.00727
+Train Loss: 0.354, Train Acc: 88.542%
+Validation Loss: 2.035, Validation Acc: 58.240%
+
+Epoch: 37/100 - LR: 0.00713
+Train Loss: 0.324, Train Acc: 89.690%
+Validation Loss: 2.014, Validation Acc: 58.370%
+
+Epoch: 38/100 - LR: 0.00699
+Train Loss: 0.290, Train Acc: 90.772%
+Validation Loss: 1.924, Validation Acc: 59.390%
+
+Epoch: 39/100 - LR: 0.00684
+Train Loss: 0.275, Train Acc: 91.326%
+Validation Loss: 1.821, Validation Acc: 60.750%
 Saving improved model..
 
-Epoch: 32/100 - LR: 0.01000
-Train Loss: 0.361, Train Acc: 88.250%
-Validation Loss: 1.355, Validation Acc: 68.260%
+Epoch: 40/100 - LR: 0.00669
+Train Loss: 0.238, Train Acc: 92.490%
+Validation Loss: 1.916, Validation Acc: 58.890%
+
+Epoch: 41/100 - LR: 0.00655
+Train Loss: 0.217, Train Acc: 93.222%
+Validation Loss: 2.108, Validation Acc: 57.470%
+
+Epoch: 42/100 - LR: 0.00639
+Train Loss: 0.194, Train Acc: 93.990%
+Validation Loss: 1.738, Validation Acc: 62.670%
 Saving improved model..
 
-Epoch: 33/100 - LR: 0.01000
-Train Loss: 0.346, Train Acc: 88.880%
-Validation Loss: 1.352, Validation Acc: 66.850%
+Epoch: 43/100 - LR: 0.00624
+Train Loss: 0.166, Train Acc: 94.990%
+Validation Loss: 1.791, Validation Acc: 61.970%
 
-Epoch: 34/100 - LR: 0.01000
-Train Loss: 0.326, Train Acc: 89.396%
-Validation Loss: 1.378, Validation Acc: 67.400%
-
-Epoch: 35/100 - LR: 0.01000
-Train Loss: 0.321, Train Acc: 89.742%
-Validation Loss: 1.353, Validation Acc: 67.560%
-
-Epoch: 36/100 - LR: 0.01000
-Train Loss: 0.299, Train Acc: 90.438%
-Validation Loss: 1.363, Validation Acc: 67.840%
-
-Epoch: 37/100 - LR: 0.01000
-Train Loss: 0.288, Train Acc: 90.802%
-Validation Loss: 1.360, Validation Acc: 67.570%
-
-Epoch: 38/100 - LR: 0.01000
-Train Loss: 0.271, Train Acc: 91.372%
-Validation Loss: 1.303, Validation Acc: 68.990%
+Epoch: 44/100 - LR: 0.00609
+Train Loss: 0.159, Train Acc: 95.214%
+Validation Loss: 1.761, Validation Acc: 62.880%
 Saving improved model..
 
-Epoch: 39/100 - LR: 0.01000
-Train Loss: 0.260, Train Acc: 91.712%
-Validation Loss: 1.341, Validation Acc: 68.800%
+Epoch: 45/100 - LR: 0.00594
+Train Loss: 0.134, Train Acc: 96.036%
+Validation Loss: 1.774, Validation Acc: 62.020%
 
-Epoch: 40/100 - LR: 0.01000
-Train Loss: 0.240, Train Acc: 92.432%
-Validation Loss: 1.377, Validation Acc: 68.620%
+Epoch: 46/100 - LR: 0.00578
+Train Loss: 0.126, Train Acc: 96.322%
+Validation Loss: 1.864, Validation Acc: 60.810%
 
-Epoch: 41/100 - LR: 0.01000
-Train Loss: 0.223, Train Acc: 93.044%
-Validation Loss: 1.397, Validation Acc: 68.200%
+Epoch: 47/100 - LR: 0.00563
+Train Loss: 0.107, Train Acc: 96.944%
+Validation Loss: 1.770, Validation Acc: 62.770%
 
-Epoch: 42/100 - LR: 0.01000
-Train Loss: 0.227, Train Acc: 92.754%
-Validation Loss: 1.403, Validation Acc: 67.450%
+Epoch: 48/100 - LR: 0.00547
+Train Loss: 0.093, Train Acc: 97.442%
+Validation Loss: 1.748, Validation Acc: 62.800%
 
-Epoch: 43/100 - LR: 0.01000
-Train Loss: 0.212, Train Acc: 93.360%
-Validation Loss: 1.429, Validation Acc: 67.470%
-
-Epoch: 44/100 - LR: 0.01000
-Train Loss: 0.209, Train Acc: 93.444%
-Validation Loss: 1.394, Validation Acc: 69.180%
+Epoch: 49/100 - LR: 0.00531
+Train Loss: 0.083, Train Acc: 97.730%
+Validation Loss: 1.727, Validation Acc: 63.660%
 Saving improved model..
 
-Epoch: 45/100 - LR: 0.01000
-Train Loss: 0.201, Train Acc: 93.736%
-Validation Loss: 1.640, Validation Acc: 65.100%
+Epoch: 50/100 - LR: 0.00516
+Train Loss: 0.074, Train Acc: 98.036%
+Validation Loss: 1.736, Validation Acc: 63.360%
 
-Epoch: 46/100 - LR: 0.01000
-Train Loss: 0.198, Train Acc: 93.794%
-Validation Loss: 1.430, Validation Acc: 67.670%
+Epoch: 51/100 - LR: 0.00500
+Train Loss: 0.069, Train Acc: 98.152%
+Validation Loss: 1.689, Validation Acc: 63.640%
 
-Epoch: 47/100 - LR: 0.01000
-Train Loss: 0.195, Train Acc: 93.936%
-Validation Loss: 1.338, Validation Acc: 69.320%
+Epoch: 52/100 - LR: 0.00484
+Train Loss: 0.058, Train Acc: 98.582%
+Validation Loss: 1.672, Validation Acc: 64.700%
 Saving improved model..
 
-Epoch: 48/100 - LR: 0.01000
-Train Loss: 0.171, Train Acc: 94.842%
-Validation Loss: 1.383, Validation Acc: 68.370%
+Epoch: 53/100 - LR: 0.00469
+Train Loss: 0.052, Train Acc: 98.670%
+Validation Loss: 1.715, Validation Acc: 64.050%
 
-Epoch: 49/100 - LR: 0.01000
-Train Loss: 0.172, Train Acc: 94.874%
-Validation Loss: 1.385, Validation Acc: 67.910%
+Epoch: 54/100 - LR: 0.00453
+Train Loss: 0.043, Train Acc: 98.988%
+Validation Loss: 1.766, Validation Acc: 63.340%
 
-Epoch: 50/100 - LR: 0.01000
-Train Loss: 0.164, Train Acc: 95.194%
-Validation Loss: 1.357, Validation Acc: 69.430%
+Epoch: 55/100 - LR: 0.00437
+Train Loss: 0.039, Train Acc: 99.112%
+Validation Loss: 1.671, Validation Acc: 64.380%
+
+Epoch: 56/100 - LR: 0.00422
+Train Loss: 0.036, Train Acc: 99.270%
+Validation Loss: 1.625, Validation Acc: 65.370%
 Saving improved model..
 
-Epoch: 51/100 - LR: 0.01000
-Train Loss: 0.160, Train Acc: 95.184%
-Validation Loss: 1.416, Validation Acc: 68.100%
+Epoch: 57/100 - LR: 0.00406
+Train Loss: 0.027, Train Acc: 99.472%
+Validation Loss: 1.675, Validation Acc: 64.390%
 
-Epoch: 52/100 - LR: 0.01000
-Train Loss: 0.165, Train Acc: 95.026%
-Validation Loss: 1.397, Validation Acc: 68.750%
-
-Epoch: 53/100 - LR: 0.01000
-Train Loss: 0.162, Train Acc: 95.088%
-Validation Loss: 1.327, Validation Acc: 69.770%
+Epoch: 58/100 - LR: 0.00391
+Train Loss: 0.026, Train Acc: 99.536%
+Validation Loss: 1.619, Validation Acc: 65.980%
 Saving improved model..
 
-Epoch: 54/100 - LR: 0.01000
-Train Loss: 0.146, Train Acc: 95.730%
-Validation Loss: 1.382, Validation Acc: 68.810%
-
-Epoch: 55/100 - LR: 0.01000
-Train Loss: 0.147, Train Acc: 95.668%
-Validation Loss: 1.382, Validation Acc: 69.040%
-
-Epoch: 56/100 - LR: 0.01000
-Train Loss: 0.152, Train Acc: 95.616%
-Validation Loss: 1.444, Validation Acc: 67.540%
-
-Epoch: 57/100 - LR: 0.01000
-Train Loss: 0.157, Train Acc: 95.338%
-Validation Loss: 1.375, Validation Acc: 68.810%
-
-Epoch: 58/100 - LR: 0.01000
-Train Loss: 0.156, Train Acc: 95.390%
-Validation Loss: 1.362, Validation Acc: 68.670%
-
-Epoch: 59/100 - LR: 0.01000
-Train Loss: 0.149, Train Acc: 95.672%
-Validation Loss: 1.437, Validation Acc: 68.460%
-
-Epoch: 60/100 - LR: 0.01000
-Train Loss: 0.141, Train Acc: 95.924%
-Validation Loss: 1.326, Validation Acc: 69.780%
+Epoch: 59/100 - LR: 0.00376
+Train Loss: 0.023, Train Acc: 99.598%
+Validation Loss: 1.609, Validation Acc: 66.230%
 Saving improved model..
 
-Epoch: 61/100 - LR: 0.01000
-Train Loss: 0.136, Train Acc: 96.072%
-Validation Loss: 1.310, Validation Acc: 70.290%
+Epoch: 60/100 - LR: 0.00361
+Train Loss: 0.020, Train Acc: 99.686%
+Validation Loss: 1.593, Validation Acc: 66.030%
+
+Epoch: 61/100 - LR: 0.00345
+Train Loss: 0.018, Train Acc: 99.714%
+Validation Loss: 1.576, Validation Acc: 66.420%
 Saving improved model..
 
-Epoch: 62/100 - LR: 0.01000
-Train Loss: 0.142, Train Acc: 95.856%
-Validation Loss: 1.475, Validation Acc: 67.770%
+Epoch: 62/100 - LR: 0.00331
+Train Loss: 0.017, Train Acc: 99.706%
+Validation Loss: 1.580, Validation Acc: 65.980%
 
-Epoch: 63/100 - LR: 0.01000
-Train Loss: 0.149, Train Acc: 95.674%
-Validation Loss: 1.344, Validation Acc: 68.760%
+Epoch: 63/100 - LR: 0.00316
+Train Loss: 0.014, Train Acc: 99.786%
+Validation Loss: 1.576, Validation Acc: 65.840%
 
-Epoch: 64/100 - LR: 0.01000
-Train Loss: 0.138, Train Acc: 96.074%
-Validation Loss: 1.456, Validation Acc: 68.140%
+Epoch: 64/100 - LR: 0.00301
+Train Loss: 0.014, Train Acc: 99.810%
+Validation Loss: 1.545, Validation Acc: 66.290%
 
-Epoch: 65/100 - LR: 0.01000
-Train Loss: 0.136, Train Acc: 96.122%
-Validation Loss: 1.428, Validation Acc: 68.040%
+Epoch: 65/100 - LR: 0.00287
+Train Loss: 0.013, Train Acc: 99.830%
+Validation Loss: 1.564, Validation Acc: 65.930%
 
-Epoch: 66/100 - LR: 0.01000
-Train Loss: 0.141, Train Acc: 95.910%
-Validation Loss: 1.401, Validation Acc: 68.350%
-
-Epoch: 67/100 - LR: 0.01000
-Train Loss: 0.142, Train Acc: 95.844%
-Validation Loss: 1.324, Validation Acc: 69.550%
-
-Epoch: 68/100 - LR: 0.01000
-Train Loss: 0.139, Train Acc: 96.016%
-Validation Loss: 1.314, Validation Acc: 69.710%
-
-Epoch: 69/100 - LR: 0.01000
-Train Loss: 0.142, Train Acc: 95.888%
-Validation Loss: 1.301, Validation Acc: 70.360%
+Epoch: 66/100 - LR: 0.00273
+Train Loss: 0.012, Train Acc: 99.850%
+Validation Loss: 1.539, Validation Acc: 66.620%
 Saving improved model..
 
-Epoch: 70/100 - LR: 0.01000
-Train Loss: 0.133, Train Acc: 96.236%
-Validation Loss: 1.373, Validation Acc: 69.500%
+Epoch: 67/100 - LR: 0.00259
+Train Loss: 0.012, Train Acc: 99.848%
+Validation Loss: 1.536, Validation Acc: 66.520%
 
-Epoch: 71/100 - LR: 0.01000
-Train Loss: 0.148, Train Acc: 95.696%
-Validation Loss: 1.396, Validation Acc: 68.510%
-
-Epoch: 72/100 - LR: 0.01000
-Train Loss: 0.143, Train Acc: 95.792%
-Validation Loss: 1.312, Validation Acc: 70.430%
+Epoch: 68/100 - LR: 0.00245
+Train Loss: 0.011, Train Acc: 99.890%
+Validation Loss: 1.527, Validation Acc: 66.910%
 Saving improved model..
 
-Epoch: 73/100 - LR: 0.01000
-Train Loss: 0.142, Train Acc: 95.888%
-Validation Loss: 1.418, Validation Acc: 68.350%
+Epoch: 69/100 - LR: 0.00232
+Train Loss: 0.010, Train Acc: 99.896%
+Validation Loss: 1.530, Validation Acc: 66.740%
 
-Epoch: 74/100 - LR: 0.01000
-Train Loss: 0.150, Train Acc: 95.596%
-Validation Loss: 1.355, Validation Acc: 68.960%
+Epoch: 70/100 - LR: 0.00219
+Train Loss: 0.009, Train Acc: 99.928%
+Validation Loss: 1.515, Validation Acc: 67.050%
+Saving improved model..
 
-Epoch: 75/100 - LR: 0.01000
-Train Loss: 0.141, Train Acc: 95.958%
-Validation Loss: 1.350, Validation Acc: 69.550%
+Epoch: 71/100 - LR: 0.00206
+Train Loss: 0.008, Train Acc: 99.910%
+Validation Loss: 1.512, Validation Acc: 67.080%
+Saving improved model..
 
-Epoch: 76/100 - LR: 0.01000
-Train Loss: 0.148, Train Acc: 95.674%
-Validation Loss: 1.451, Validation Acc: 68.320%
+Epoch: 72/100 - LR: 0.00194
+Train Loss: 0.008, Train Acc: 99.922%
+Validation Loss: 1.509, Validation Acc: 67.100%
+Saving improved model..
 
-Epoch: 77/100 - LR: 0.01000
-Train Loss: 0.157, Train Acc: 95.446%
-Validation Loss: 1.375, Validation Acc: 68.470%
+Epoch: 73/100 - LR: 0.00181
+Train Loss: 0.008, Train Acc: 99.914%
+Validation Loss: 1.501, Validation Acc: 67.120%
+Saving improved model..
 
-Epoch: 78/100 - LR: 0.01000
-Train Loss: 0.128, Train Acc: 96.500%
-Validation Loss: 1.332, Validation Acc: 69.380%
+Epoch: 74/100 - LR: 0.00169
+Train Loss: 0.007, Train Acc: 99.928%
+Validation Loss: 1.498, Validation Acc: 67.250%
+Saving improved model..
 
-Epoch: 79/100 - LR: 0.01000
-Train Loss: 0.144, Train Acc: 95.808%
-Validation Loss: 1.369, Validation Acc: 69.500%
+Epoch: 75/100 - LR: 0.00158
+Train Loss: 0.007, Train Acc: 99.940%
+Validation Loss: 1.496, Validation Acc: 67.320%
+Saving improved model..
 
-Epoch: 80/100 - LR: 0.01000
-Train Loss: 0.132, Train Acc: 96.286%
-Validation Loss: 1.414, Validation Acc: 69.200%
+Epoch: 76/100 - LR: 0.00146
+Train Loss: 0.007, Train Acc: 99.924%
+Validation Loss: 1.498, Validation Acc: 66.940%
 
-Epoch: 81/100 - LR: 0.01000
-Train Loss: 0.144, Train Acc: 95.840%
-Validation Loss: 1.416, Validation Acc: 68.030%
+Epoch: 77/100 - LR: 0.00136
+Train Loss: 0.007, Train Acc: 99.944%
+Validation Loss: 1.492, Validation Acc: 67.100%
 
-Epoch: 82/100 - LR: 0.01000
-Train Loss: 0.147, Train Acc: 95.762%
-Validation Loss: 1.609, Validation Acc: 65.380%
+Epoch: 78/100 - LR: 0.00125
+Train Loss: 0.007, Train Acc: 99.928%
+Validation Loss: 1.491, Validation Acc: 67.070%
 
-Epoch: 83/100 - LR: 0.01000
-Train Loss: 0.148, Train Acc: 95.752%
-Validation Loss: 1.339, Validation Acc: 70.230%
+Epoch: 79/100 - LR: 0.00115
+Train Loss: 0.007, Train Acc: 99.938%
+Validation Loss: 1.486, Validation Acc: 67.310%
 
-Epoch: 84/100 - LR: 0.01000
-Train Loss: 0.137, Train Acc: 96.180%
-Validation Loss: 1.420, Validation Acc: 67.620%
+Epoch: 80/100 - LR: 0.00105
+Train Loss: 0.006, Train Acc: 99.946%
+Validation Loss: 1.486, Validation Acc: 67.060%
 
-Epoch: 85/100 - LR: 0.01000
-Train Loss: 0.140, Train Acc: 96.042%
-Validation Loss: 1.302, Validation Acc: 70.340%
+Epoch: 81/100 - LR: 0.00095
+Train Loss: 0.006, Train Acc: 99.944%
+Validation Loss: 1.479, Validation Acc: 67.300%
 
-Epoch: 86/100 - LR: 0.01000
-Train Loss: 0.137, Train Acc: 96.088%
-Validation Loss: 1.358, Validation Acc: 69.410%
+Epoch: 82/100 - LR: 0.00086
+Train Loss: 0.006, Train Acc: 99.948%
+Validation Loss: 1.483, Validation Acc: 67.060%
 
-Epoch: 87/100 - LR: 0.01000
-Train Loss: 0.137, Train Acc: 96.202%
-Validation Loss: 1.359, Validation Acc: 68.790%
+Epoch: 83/100 - LR: 0.00078
+Train Loss: 0.006, Train Acc: 99.946%
+Validation Loss: 1.478, Validation Acc: 67.270%
 
-Epoch: 88/100 - LR: 0.01000
-Train Loss: 0.140, Train Acc: 95.988%
-Validation Loss: 1.299, Validation Acc: 70.100%
+Epoch: 84/100 - LR: 0.00070
+Train Loss: 0.006, Train Acc: 99.932%
+Validation Loss: 1.479, Validation Acc: 67.140%
 
-Epoch: 89/100 - LR: 0.01000
-Train Loss: 0.145, Train Acc: 95.816%
-Validation Loss: 1.368, Validation Acc: 69.740%
+Epoch: 85/100 - LR: 0.00062
+Train Loss: 0.006, Train Acc: 99.938%
+Validation Loss: 1.472, Validation Acc: 67.190%
 
-Epoch: 90/100 - LR: 0.01000
-Train Loss: 0.147, Train Acc: 95.734%
-Validation Loss: 1.338, Validation Acc: 69.420%
+Epoch: 86/100 - LR: 0.00054
+Train Loss: 0.006, Train Acc: 99.944%
+Validation Loss: 1.479, Validation Acc: 67.210%
 
-Epoch: 91/100 - LR: 0.01000
-Train Loss: 0.150, Train Acc: 95.714%
-Validation Loss: 1.390, Validation Acc: 68.870%
+Epoch: 87/100 - LR: 0.00048
+Train Loss: 0.006, Train Acc: 99.938%
+Validation Loss: 1.478, Validation Acc: 67.190%
 
-Epoch: 92/100 - LR: 0.01000
-Train Loss: 0.140, Train Acc: 96.062%
-Validation Loss: 1.375, Validation Acc: 68.590%
+Epoch: 88/100 - LR: 0.00041
+Train Loss: 0.006, Train Acc: 99.948%
+Validation Loss: 1.474, Validation Acc: 67.200%
 
-Epoch: 93/100 - LR: 0.01000
-Train Loss: 0.144, Train Acc: 95.842%
-Validation Loss: 1.391, Validation Acc: 68.490%
+Epoch: 89/100 - LR: 0.00035
+Train Loss: 0.006, Train Acc: 99.942%
+Validation Loss: 1.477, Validation Acc: 67.150%
 
-Epoch: 94/100 - LR: 0.01000
-Train Loss: 0.141, Train Acc: 96.048%
-Validation Loss: 1.413, Validation Acc: 67.800%
+Epoch: 90/100 - LR: 0.00030
+Train Loss: 0.005, Train Acc: 99.974%
+Validation Loss: 1.475, Validation Acc: 67.200%
 
-Epoch: 95/100 - LR: 0.01000
-Train Loss: 0.125, Train Acc: 96.518%
-Validation Loss: 1.374, Validation Acc: 68.710%
+Epoch: 91/100 - LR: 0.00024
+Train Loss: 0.006, Train Acc: 99.950%
+Validation Loss: 1.472, Validation Acc: 67.190%
 
-Epoch: 96/100 - LR: 0.01000
-Train Loss: 0.140, Train Acc: 96.020%
-Validation Loss: 1.401, Validation Acc: 69.160%
+Epoch: 92/100 - LR: 0.00020
+Train Loss: 0.006, Train Acc: 99.948%
+Validation Loss: 1.472, Validation Acc: 67.290%
 
-Epoch: 97/100 - LR: 0.01000
-Train Loss: 0.149, Train Acc: 95.740%
-Validation Loss: 1.390, Validation Acc: 69.320%
+Epoch: 93/100 - LR: 0.00016
+Train Loss: 0.005, Train Acc: 99.952%
+Validation Loss: 1.470, Validation Acc: 67.290%
 
-Epoch: 98/100 - LR: 0.01000
-Train Loss: 0.139, Train Acc: 96.038%
-Validation Loss: 1.395, Validation Acc: 69.290%
+Epoch: 94/100 - LR: 0.00012
+Train Loss: 0.006, Train Acc: 99.948%
+Validation Loss: 1.467, Validation Acc: 67.280%
 
-Epoch: 99/100 - LR: 0.01000
-Train Loss: 0.128, Train Acc: 96.404%
-Validation Loss: 1.318, Validation Acc: 69.970%
+Epoch: 95/100 - LR: 0.00009
+Train Loss: 0.005, Train Acc: 99.968%
+Validation Loss: 1.471, Validation Acc: 67.340%
+Saving improved model..
 
-Epoch: 100/100 - LR: 0.01000
-Train Loss: 0.130, Train Acc: 96.270%
-Validation Loss: 1.293, Validation Acc: 69.950%
-Test Accuracy: 70.430%
+Epoch: 96/100 - LR: 0.00006
+Train Loss: 0.006, Train Acc: 99.956%
+Validation Loss: 1.467, Validation Acc: 67.290%
+
+Epoch: 97/100 - LR: 0.00004
+Train Loss: 0.005, Train Acc: 99.968%
+Validation Loss: 1.468, Validation Acc: 67.350%
+Saving improved model..
+
+Epoch: 98/100 - LR: 0.00002
+Train Loss: 0.005, Train Acc: 99.966%
+Validation Loss: 1.471, Validation Acc: 67.210%
+
+Epoch: 99/100 - LR: 0.00001
+Train Loss: 0.005, Train Acc: 99.972%
+Validation Loss: 1.467, Validation Acc: 67.270%
+
+Epoch: 100/100 - LR: 0.00000
+Train Loss: 0.005, Train Acc: 99.970%
+Validation Loss: 1.473, Validation Acc: 67.280%
+Test Accuracy: 67.350%

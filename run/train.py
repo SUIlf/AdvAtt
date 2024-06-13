@@ -29,7 +29,7 @@ parser.add_argument('--batch_size', type = int, default = 128, help = 'The batch
 parser.add_argument('--valid_ratio', type = float, default = None, help = 'The proportion of the validation set, default is None.')
 # normalize，用于指定标准化模式
 parser.add_argument('--normalize', type = str, default = None, help = 'The nomralization mode, default is None.')
-parser.add_argument('--lr', default=0.01, type=float, help='learning rate')
+parser.add_argument('--lr', default=0.1, type=float, help='learning rate')
 # parser.add_argument('--resume', '-r', action='store_true', help='resume from checkpoint')
 args = parser.parse_args()
 
@@ -46,7 +46,7 @@ batch_size = 1
 valid_ratio = None
 
 # 初始化日志和保存目录
-save_folder = f'./checkpoint2/{args.dataset}/{args.model_type}/'
+save_folder = f'./checkpoint_1/{args.dataset}/{args.model_type}/'
 os.makedirs(save_folder, exist_ok=True)
 log_path = os.path.join(save_folder, 'logger.log')
 logger = Logger(log_path=log_path)
