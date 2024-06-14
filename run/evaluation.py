@@ -20,14 +20,14 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 dataset = 'cifar100'
 batch_size = 128
-model_type = 'resnet18'
+model_type = 'resnet50'
 
 criterion = nn.CrossEntropyLoss()
 
 # 假设你的数据加载函数可以这样调用（确保使用与训练时相同的参数）
 _, _, testloader, _ = parse_data(name=dataset, batch_size=batch_size, valid_ratio=None)
 
-trained_model = model_load(dataset=dataset, model_type=model_type, model_path='./checkpoint', normalize=None)
+trained_model = model_load(dataset=dataset, model_type=model_type, model_path='./checkpoint_1', normalize=None)
 trained_model = trained_model.to(device)
 trained_model.eval()  # 设置为评估模式
 

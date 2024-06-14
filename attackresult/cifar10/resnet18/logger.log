@@ -76,3 +76,15 @@ Total time taken for NUCLEAR attack: 329.03 seconds
 Accuracy of the model under SPECTRAL attack: 1.11%
 Total time taken for SPECTRAL attack: 313.63 seconds
  
+Accuracy of the model under NUCLEAR attack: 37.29%
+Total time taken for NUCLEAR attack: 35.64 seconds
+ 
+Accuracy of the model under SPECTRAL attack: 15.65%
+Total time taken for SPECTRAL attack: 32.23 seconds
+ 
+Accuracy of the model under NUCLEAR attack: 37.30%
+Total time taken for NUCLEAR attack: 35.05 seconds
+ 
+Accuracy of the model under SPECTRAL attack: 15.65%
+Total time taken for SPECTRAL attack: 34.35 seconds
+ 
